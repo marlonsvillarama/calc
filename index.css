@@ -1,0 +1,53 @@
+:root {
+    --border-color: #CCC;
+    --key-color: #3F3F3F;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: inherit;
+}
+.calculator {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 30rem;
+}
+.output {
+    padding: 1rem 3rem;
+    font-size: 3rem;
+    text-align: end;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: darkslategray;
+    color: white;
+    border-bottom: 1px solid var(--border-color);
+}
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+.keypad button {
+    background-color: #EEE;
+    font-size: 2rem;
+    color: var(--key-color);
+    border: 2px solid var(--border-color);
+    padding: 1.5rem 0;
+    cursor: pointer;
+}
+.keypad button:hover {
+    background-color: #CCC;
+}
+.keypad button.key-equal {
+    background-color: #fe886a;
+    grid-column: 4;
+    grid-row: 2 / span 3;
+    border-bottom-right-radius: 2rem;
+}
+.keypad button.key-equal:hover {
+    background-color: #ff7033;
+}
+.border-br {
+    border-bottom-left-radius: 2rem;
+}
